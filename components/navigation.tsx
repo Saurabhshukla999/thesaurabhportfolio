@@ -11,6 +11,7 @@ import { personalData } from "@/lib/data"
 export default function Navigation() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [scrolled, setScrolled] = useState(false)
+  const [mounted, setMounted] = useState(false)
   const pathname = usePathname()
   const { theme, setTheme } = useTheme()
 
@@ -20,6 +21,10 @@ export default function Navigation() {
     }
     window.addEventListener("scroll", handleScroll)
     return () => window.removeEventListener("scroll", handleScroll)
+  }, [])
+
+  useEffect(() => {
+    setMounted(true)
   }, [])
 
   const navItems = [
@@ -41,6 +46,9 @@ export default function Navigation() {
     setTheme(theme === "dark" ? "light-terminal" : "dark")
   }
 
+  if (!mounted) {
+    return <nav className="fixed top-0 left-0 right-0 z-50 h-20" />; 
+  }
   return (
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 font-mono ${
@@ -89,7 +97,11 @@ export default function Navigation() {
               className="text-terminal-green hover:bg-gray-800 rounded-none w-10 h-10"
               onClick={toggleTheme}
             >
-              {theme === "dark" ? <Sun className="h-5 w-5" /> : <Moon className="h-5 w-5" />}
+              {mounted && theme === "dark" ? (
+          <Sun className="h-5 w-5" />
+        ) : (
+          <Moon className="h-5 w-5" />
+        )}
             </Button>
             <Button
               size="sm"

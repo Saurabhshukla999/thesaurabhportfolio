@@ -143,14 +143,15 @@ export default function About() {
             </h2>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button
-                size="lg"
-                className="glass-terminal-button bg-terminal-green hover:bg-terminal-green/90 text-black px-8 py-3 rounded-none font-bold tracking-wide transition-all duration-300 hover:scale-105"
-                href="/resume.pdf"
-                target="_blank"
-              >
-                Download Resume
-                <Download className="ml-2 h-4 w-4" />
-              </Button>
+        size="lg"
+        className="glass-terminal-button bg-terminal-green hover:bg-terminal-green/90 text-black px-8 py-3 rounded-none font-bold tracking-wide transition-all duration-300 hover:scale-105"
+        asChild
+      >
+        <a href="/saurabh.pdf" download>
+          Download Resume
+          <Download className="ml-2 h-4 w-4" />
+        </a>
+      </Button>
               <Button
                 variant="outline"
                 size="lg"

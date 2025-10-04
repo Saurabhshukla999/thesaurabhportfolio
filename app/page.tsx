@@ -121,14 +121,16 @@ export default function HomePage() {
                 </Button>
 
                 <Button
-                  variant="outline"
                   size="lg"
-                  className="glass-terminal-button border-2 border-terminal-green/50 hover:border-terminal-green text-terminal-green-bright hover:bg-terminal-green hover:text-black px-8 py-4 rounded-none text-lg font-bold tracking-wide transition-all duration-300 hover:scale-105 bg-transparent backdrop-blur-sm"
-                  href="/resume.pdf"
-                  target="_blank"
+                  className="glass-terminal-button bg-terminal-green hover:bg-terminal-green/90 text-black px-8 py-3 rounded-none font-bold tracking-wide transition-all duration-300 hover:scale-105"
+                  asChild
                 >
-                  <Download className="mr-2 h-5 w-5" /> Download Resume
+                  <a href="/saurabh.pdf" download>
+                    Download Resume
+                    <Download className="ml-2 h-4 w-4" />
+                  </a>
                 </Button>
+                
               </div>
 
               {/* Social Links */}
@@ -161,7 +163,12 @@ export default function HomePage() {
                   className="glass-terminal-icon bg-gray-900/50 backdrop-blur-sm border border-gray-800/50 hover:border-terminal-green/50 hover:bg-terminal-green/10 text-high-contrast w-12 h-12 rounded-none transition-all duration-300 hover:scale-110"
                   asChild
                 >
-                  <a href={`mailto:${personalData.email}`}>
+                  <a
+                    href={`https://mail.google.com/mail/?view=cm&to=${personalData.email}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-block w-12 h-12 flex items-center justify-center bg-gray-900/50 border border-gray-800/50 hover:border-terminal-green/50 hover:bg-terminal-green/10 text-high-contrast rounded-none transition-all duration-300 hover:scale-110"
+                  >
                     <Mail className="h-5 w-5" />
                   </a>
                 </Button>

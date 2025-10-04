@@ -5,7 +5,7 @@ import Navigation from "@/components/navigation"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { Mail, MapPin, Phone, Calendar } from "lucide-react"
+import { Download, Mail, MapPin, Phone, Calendar } from "lucide-react"
 import ParticlesBackground from "@/components/particles-background"
 import { personalData } from "@/lib/data"
 
@@ -140,15 +140,17 @@ export default function Contact() {
                   >
                     <a href="tel:8569879142">Schedule a Call</a>
                   </Button>
-
+                  
                   <Button
                     size="lg"
                     variant="outline"
                     className="w-full glass-terminal-button border-2 border-terminal-green/50 hover:border-terminal-green text-terminal-green-bright hover:bg-terminal-green hover:text-black px-6 py-3 rounded-none font-bold tracking-wide transition-all duration-300 bg-transparent backdrop-blur-sm"
-                    href="/resume.pdf"
-                    target="_blank"
-                  >
-                    Download Resume
+                    asChild
+                    >
+                      <a href="/saurabh.pdf" download>
+                        Download Resume
+                       <Download className="ml-2 h-4 w-4" />
+                      </a>
                   </Button>
                 </div>
               </CardContent>
