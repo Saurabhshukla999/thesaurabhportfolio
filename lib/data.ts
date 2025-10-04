@@ -9,7 +9,7 @@ export const personalData = {
 
   // Professional Summary
   summary:
-    "React Developer focused on building performant, scalable web interfaces. 2+ years of hands-on experience building production-grade apps using React, TypeScript, and modern stacks. Eager to contribute and grow with a team pushing real impact.",
+    "Software Developer focused on building performant, scalable web interfaces. Experience in building production-grade apps using React, JavaScript, NodeJs, and Express,. Eager to contribute and grow with a team pushing real impact.",
 
   // Hero Section
   hero: {
@@ -21,12 +21,12 @@ export const personalData = {
 
   // Technical Skills
   skills: {
-    languages: ["JavaScript", "TypeScript", "Java", "Python"],
-    frameworks: ["React.js", "Tailwind CSS", "React Query", "Chart.js"],
-    tools: ["Git", "GitHub", "Vite", "npm", "Yarn"],
-    backend: ["Node.js", "Express.js", "Supabase", "REST APIs"],
-    authentication: ["JWT", "Supabase Auth"],
-    learning: ["Next.js"],
+    languages: ["JavaScript", "Java", "C", "HTML", "CSS"],
+    frameworks: ["React.js", "Tailwind CSS"],
+    tools: ["Git", "GitHub", "Postman", "Docker"],
+    backend: ["Node.js", "Express.js", "REST APIs"],
+    authentication: ["Supabase","Firebase","JWT", "OAuth"],
+    learning: ["Next.js","Typescript"],
   },
 
   // Projects
@@ -91,13 +91,13 @@ export const personalData = {
       degree: "Class XII CBSE-AISSCE",
       institute: "Dronacharya College of Engineering, Gurugram",
       year: "2022",
-      grade: "86.4%",
+      grade: "89.8%",
     },
     {
       degree: "Class X CBSE-AISSE",
       institute: "New Shishu Kalyan Sr Sec School, Gurugram",
       year: "2020",
-      grade: "82.8% (100% in Mathematics)",
+      grade: "82.8%",
     },
   ],
 
@@ -107,7 +107,7 @@ export const personalData = {
       "Computer Networks",
       "Operating Systems",
       "Theory Of Computation",
-      "Analysis and Design of Algorithms",
+      "Design and Analysis of Algorithms",
       "Programming Languages",
       "Computer Architecture",
       "Discrete Mathematical Structures",
