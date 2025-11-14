@@ -17,7 +17,7 @@ const jetBrainsMono = JetBrains_Mono({
 export const metadata: Metadata = {
   title: `${personalData.name} - ${personalData.title}`,
   description: personalData.summary,
-  keywords: "frontend developer, react developer, javascript, typescript, web development, portfolio",
+  keywords: "Full Stack Developer, react developer, javascript, typescript, web development, portfolio",
   authors: [{ name: personalData.name }],
   openGraph: {
     title: `${personalData.name} - ${personalData.title}`,

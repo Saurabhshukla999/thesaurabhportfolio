@@ -156,7 +156,7 @@ export default function Skills() {
                   2+ Years of Experience
                 </h2>
                 <p className="text-xl text-medium-contrast leading-relaxed">
-                  Specialized in building performant, scalable web interfaces using React and modern JavaScript
+                  Specialized in building performant, scalable web interfaces using Full Stack
                   frameworks. Passionate about creating exceptional user experiences and writing clean, maintainable
                   code.
                 </p>

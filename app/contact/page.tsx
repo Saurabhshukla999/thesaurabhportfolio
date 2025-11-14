@@ -94,7 +94,7 @@ export default function Contact() {
                       href="tel:8569879142"
                       className="text-medium-contrast hover:text-terminal-green-bright transition-colors tracking-wide"
                     >
-                      8569879142
+                      +91 8569879142
                     </a>
                   </div>
                 </div>
