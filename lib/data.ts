@@ -43,7 +43,6 @@ export const personalData = {
       highlights: [
         "Designed and developed the complete Full Stack application from UI to backend APIs.",
         "Implemented secure user authentication, provider profiles, and service listings.",
-        "Built location-based search using MongoDB geospatial queries for accurate results.",
         "Created booking flow, provider dashboard, and role-based access logic.",
         "Developed robust REST APIs with validation and optimized MongoDB queries.",
       ],
