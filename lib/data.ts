@@ -32,6 +32,24 @@ export const personalData = {
   // Projects
   projects: [
     {
+      title: "SmartServe – Local Service Finder Platform",
+      description:
+        "Developed an end-to-end platform that connects users with nearby verified service providers. Built fully responsive UI screens, secure authentication, location-based service discovery, and structured backend workflows.",
+      image: "/placeholder.svg?height=300&width=500",
+      tags: ["React","TypeScript", "Node.js", "Express", "MongoDB", "Tailwind CSS"],
+      liveUrl: "https://smartserve-omega.vercel.app/",
+      githubUrl: "https://github.com/Saurabhshukla999/smartserve",
+      featured: true,
+      highlights: [
+        "Designed and developed the complete Full Stack application from UI to backend APIs.",
+        "Implemented secure user authentication, provider profiles, and service listings.",
+        "Built location-based search using MongoDB geospatial queries for accurate results.",
+        "Created booking flow, provider dashboard, and role-based access logic.",
+        "Developed robust REST APIs with validation and optimized MongoDB queries.",
+      ],
+    },
+    
+    {
       title: "TickTimerDo – Tasks, Notes & Pomodoro Productivity App",
       description:
         "Built an all-in-one productivity application combining a to-do list, notes system, and Pomodoro timer. Developed a clean, responsive UI in React and a robust backend using Node.js and MongoDB.",
@@ -50,30 +68,12 @@ export const personalData = {
     },
     
     {
-      title: "ServEase – Local Service Finder Platform",
-      description:
-        "Developed an end-to-end platform that connects users with nearby verified service providers. Built fully responsive UI screens, secure authentication, location-based service discovery, and structured backend workflows.",
-      image: "/placeholder.svg?height=300&width=500",
-      tags: ["React","TypeScript", "Node.js", "Express", "MongoDB", "Tailwind CSS"],
-      liveUrl: "#",
-      githubUrl: "#",
-      featured: true,
-      highlights: [
-        "Designed and developed the complete MERN application from UI to backend APIs.",
-        "Implemented secure user authentication, provider profiles, and service listings.",
-        "Built location-based search using MongoDB geospatial queries for accurate results.",
-        "Created booking flow, provider dashboard, and role-based access logic.",
-        "Developed robust REST APIs with validation and optimized MongoDB queries.",
-      ],
-    },
-    
-    {
       title: "Shortly – URL Shortener with Analytics",
       description:
         "Built a fast and reliable URL shortening service with custom link generation, redirection logic, and click-tracking analytics. Designed the backend for speed and accuracy with optimized database indexing.",
       image: "/placeholder.svg?height=300&width=500",
       tags: ["Javascript", "Node.js", "Express", "MongoDB", "React", "Tailwind CSS"],
-      liveUrl: "#",
+      liveUrl: "https://url-shortner-qopf.onrender.com/",
       githubUrl: "https://github.com/Saurabhshukla999/URL-Shortner",
       featured: false,
       highlights: [
