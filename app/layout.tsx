@@ -23,8 +23,7 @@ export const metadata: Metadata = {
     title: `${personalData.name} - ${personalData.title}`,
     description: personalData.summary,
     type: "website",
-  },
-    generator: 'v0.dev'
+  }
 }
 
 export default function RootLayout({

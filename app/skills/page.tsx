@@ -46,12 +46,7 @@ export default function Skills() {
       skills: personalData.skills.authentication,
       color: "from-indigo-500 to-purple-500",
     },
-    {
-      title: "Currently Learning",
-      icon: BookOpen,
-      skills: personalData.skills.learning,
-      color: "from-yellow-500 to-orange-500",
-    },
+    
   ]
 
   return (
@@ -99,7 +94,7 @@ export default function Skills() {
             <p
               className={`text-xl md:text-2xl text-medium-contrast max-w-3xl mx-auto leading-relaxed transition-all duration-1000 delay-700 ${mounted ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
             >
-              A comprehensive overview of my technical skills and the technologies I work with to build modern web
+              A overview of my technical skills and the technologies I work with to build modern web
               applications.
             </p>
           </div>
@@ -153,7 +148,7 @@ export default function Skills() {
             <Card className="glass-terminal-card bg-gray-900/50 backdrop-blur-sm border-terminal-green/30 max-w-4xl mx-auto">
               <CardContent className="p-8">
                 <h2 className="text-3xl md:text-4xl font-bold mb-6 heading-accent terminal-glow-bright">
-                  2+ Years of Experience
+                  Experience
                 </h2>
                 <p className="text-xl text-medium-contrast leading-relaxed">
                   Specialized in building performant, scalable web interfaces using Full Stack

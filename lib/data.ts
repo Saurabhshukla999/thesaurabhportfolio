@@ -22,11 +22,10 @@ export const personalData = {
   // Technical Skills
   skills: {
     languages: ["JavaScript","TypeScript", "Java", "C", "HTML", "CSS"],
-    frameworks: ["React.js", "Tailwind CSS", "Radix UI"],
-    tools: ["Git", "GitHub", "Postman", "Docker"],
+    frameworks: ["React.js", "Tailwind CSS","Radix UI", "Material UI"],
+    tools: ["Git", "GitHub", "Postman"],
     backend: ["Node.js", "Express.js", "REST APIs"],
-    authentication: ["Supabase","Firebase","JWT", "OAuth"],
-    learning: ["Rust", "Golang"],
+    authentication: ["JWT"],
   },
 
   // Projects
@@ -92,7 +91,7 @@ export const personalData = {
       degree: "BTech in Computer Science and Engineering",
       institute: "Dronacharya College of Engineering, Gurugram",
       year: "2022-Present",
-      grade: "CGPA: 6.7/10",
+      grade: "CGPA: 6.8/10",
     },
     {
       degree: "Class XII CBSE-AISSCE",
