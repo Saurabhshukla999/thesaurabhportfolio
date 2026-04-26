@@ -148,7 +148,7 @@ export default function Skills() {
             <Card className="glass-terminal-card bg-gray-900/50 backdrop-blur-sm border-terminal-green/30 max-w-4xl mx-auto">
               <CardContent className="p-8">
                 <h2 className="text-3xl md:text-4xl font-bold mb-6 heading-accent terminal-glow-bright">
-                  Experience
+                  Experience 
                 </h2>
                 <p className="text-xl text-medium-contrast leading-relaxed">
                   Specialized in building performant, scalable web interfaces using Full Stack
