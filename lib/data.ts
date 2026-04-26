@@ -91,7 +91,7 @@ export const personalData = {
       degree: "BTech in Computer Science and Engineering",
       institute: "Dronacharya College of Engineering, Gurugram",
       year: "2022-Present",
-      grade: "CGPA: 6.8/10",
+      grade: "CGPA: 7.01/10",
     },
     {
       degree: "Class XII CBSE-AISSCE",
