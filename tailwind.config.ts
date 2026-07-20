@@ -53,7 +53,7 @@ const config: Config = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
-        // Enhanced Terminal-specific colors
+        // Terminal aliases (mapped to new blue palette)
         "terminal-dark": "var(--terminal-dark)",
         "terminal-green": "var(--terminal-green)",
         "terminal-green-bright": "var(--terminal-green-bright)",
@@ -62,6 +62,22 @@ const config: Config = {
         "terminal-light-text": "var(--terminal-light-text)",
         "terminal-light-text-bright": "var(--terminal-light-text-bright)",
         "terminal-light-border": "var(--terminal-light-border)",
+        // New GitHub-style palette tokens
+        "gh-bg": "var(--color-bg)",
+        "gh-surface": "var(--color-surface)",
+        "gh-text": "var(--color-text-primary)",
+        "gh-text-muted": "var(--color-text-secondary)",
+        "gh-border": "var(--color-border)",
+        "gh-accent": "var(--color-accent)",
+        "gh-accent-hover": "var(--color-accent-hover)",
+        "gh-success": "var(--color-success)",
+        "gh-warning": "var(--color-warning)",
+        "gh-error": "var(--color-error)",
+      },
+      backgroundImage: {
+        "gradient-primary": "linear-gradient(to right, #3B82F6, #06B6D4)",
+        "gradient-secondary": "linear-gradient(to right, #A855F7, #3B82F6)",
+        "glass-gradient": "linear-gradient(to bottom right, rgba(255, 255, 255, 0.08), transparent)",
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -83,6 +99,8 @@ const config: Config = {
         "accordion-up": "accordion-up 0.2s ease-out",
       },
       fontFamily: {
+        sans: ["var(--font-inter)", "sans-serif"],
+        heading: ["var(--font-heading)", "sans-serif"],
         mono: ["var(--font-mono)", "monospace"],
       },
     },

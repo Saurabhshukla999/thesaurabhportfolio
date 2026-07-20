@@ -1,11 +1,17 @@
 import type React from "react"
 import type { Metadata } from "next"
-import { Inter, JetBrains_Mono } from "next/font/google"
+import { Inter, JetBrains_Mono, Space_Grotesk } from "next/font/google"
 import "./globals.css"
 import { personalData } from "@/lib/data"
 import { ThemeProvider } from "@/components/theme-provider"
 
-const inter = Inter({ subsets: ["latin"] })
+const inter = Inter({ subsets: ["latin"], variable: "--font-inter" })
+
+const spaceGrotesk = Space_Grotesk({
+  subsets: ["latin"],
+  variable: "--font-heading",
+  display: "swap",
+})
 
 const jetBrainsMono = JetBrains_Mono({
   subsets: ["latin"],
@@ -33,7 +39,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`${inter.className} ${jetBrainsMono.variable} font-mono`}>
+      <body className={`${inter.className} ${inter.variable} ${spaceGrotesk.variable} ${jetBrainsMono.variable} font-sans text-foreground bg-background`}>
         <ThemeProvider
           attribute="class"
           defaultTheme="dark"

@@ -206,6 +206,8 @@ export default function HomePage() {
         </div>
       </section>
 
+      <div className="blueprint-divider"></div>
+
       {/* Featured Projects Section */}
       <section className="relative z-10 py-24">
         <div className="container mx-auto px-8">
@@ -315,6 +317,8 @@ export default function HomePage() {
         </div>
       </section>
 
+      <div className="blueprint-divider"></div>
+
       {/* Skills Preview Section */}
       <section className="relative z-10 py-24">
         <div className="container mx-auto px-8">
@@ -352,6 +356,8 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
+      <div className="blueprint-divider"></div>
 
       {/* CTA Section */}
       <section className="relative z-10 py-24">
