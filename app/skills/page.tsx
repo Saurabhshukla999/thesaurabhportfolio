@@ -36,9 +36,21 @@ export default function Skills() {
     },
     {
       title: "Backend & APIs",
-      icon: Database,
+      icon: Wrench,
       skills: personalData.skills.backend,
       color: "from-orange-500 to-red-500",
+    },
+    {
+      title: "Databases",
+      icon: Database,
+      skills: personalData.skills.databases,
+      color: "from-teal-500 to-cyan-500",
+    },
+    {
+      title: "Testing",
+      icon: BookOpen,
+      skills: personalData.skills.testing,
+      color: "from-amber-500 to-orange-500",
     },
     {
       title: "Authentication",
@@ -46,7 +58,6 @@ export default function Skills() {
       skills: personalData.skills.authentication,
       color: "from-indigo-500 to-purple-500",
     },
-    
   ]
 
   return (
@@ -148,9 +159,9 @@ export default function Skills() {
             <Card className="glass-terminal-card bg-gray-900/50 backdrop-blur-sm border-terminal-green/30 max-w-4xl mx-auto">
               <CardContent className="p-8">
                 <p className="text-xl text-medium-contrast leading-relaxed">
-                  Specialized in building performant, scalable web interfaces using Full Stack
-                  frameworks. Passionate about creating exceptional user experiences and writing clean, maintainable
-                  code.
+                  Currently shipping production Ruby on Rails APIs for a live B2B booking platform — feature modules,
+                  schema migrations and RSpec request specs, all through code review. I care about endpoints that are
+                  well-documented, well-tested, and safe to change.
                 </p>
               </CardContent>
             </Card>

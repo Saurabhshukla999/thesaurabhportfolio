@@ -1,5 +1,4 @@
 "use client"
-
 import { ArrowRight, Github, Mail, Linkedin, Download, ExternalLink, Code, Briefcase } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
@@ -16,7 +15,7 @@ export default function HomePage() {
   const [currentText, setCurrentText] = useState("")
   const [textIndex, setTextIndex] = useState(0)
 
-  const typingTexts = ["Frontend Developer", "React Specialist", "UI/UX Enthusiast", "Problem Solver"]
+  const typingTexts = ["Backend Developer", "Ruby on Rails Engineer", "API Designer", "Problem Solver"]
 
   useEffect(() => {
     setMounted(true)

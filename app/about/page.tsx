@@ -4,7 +4,7 @@ import { useState, useEffect } from "react"
 import Navigation from "@/components/navigation"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { Download, MapPin, Mail, Linkedin, Github, GraduationCap } from "lucide-react"
+import { Download, MapPin, Mail, Linkedin, Github, GraduationCap, Briefcase } from "lucide-react"
 import ParticlesBackground from "@/components/particles-background"
 import { personalData } from "@/lib/data"
 import Link from "next/link"
@@ -130,6 +130,66 @@ export default function About() {
                 ))}
               </CardContent>
             </Card>
+          </div>
+
+          {/* Experience */}
+          <div
+            className={`mb-16 transition-all duration-1000 delay-500 ${mounted ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
+          >
+            <h2 className="text-3xl md:text-4xl font-bold mb-8 leading-tight flex items-center gap-3">
+              <Briefcase className="h-7 w-7 text-terminal-green" />
+              <span className="text-high-contrast">Experience</span>
+            </h2>
+
+            <div className="space-y-8">
+              {personalData.experience.map((job, index) => (
+                <Card
+                  key={index}
+                  className="glass-terminal-card bg-gray-900/50 backdrop-blur-sm border-2 border-gray-800/50 hover:border-terminal-green/50 transition-all duration-500 rounded-none"
+                >
+                  <CardHeader className="border-b border-gray-800/50">
+                    <div className="flex flex-col md:flex-row md:justify-between md:items-start gap-2">
+                      <div>
+                        <CardTitle className="text-xl font-bold heading-secondary tracking-wider flex flex-wrap items-center gap-3">
+                          {job.company}
+                          {job.current && (
+                            <span className="px-2 py-0.5 bg-terminal-green/15 border border-terminal-green/40 text-terminal-green text-[10px] font-bold tracking-widest uppercase">
+                              Current
+                            </span>
+                          )}
+                        </CardTitle>
+                        <p className="text-medium-contrast text-sm tracking-wide mt-1">{job.role}</p>
+                        <p className="text-gray-500 text-xs tracking-wide mt-1">{job.context}</p>
+                      </div>
+                      <div className="md:text-right shrink-0">
+                        <p className="text-gray-400 text-sm tracking-wide">{job.period}</p>
+                        <p className="text-gray-500 text-xs tracking-wide">{job.location}</p>
+                      </div>
+                    </div>
+                  </CardHeader>
+                  <CardContent className="pt-6">
+                    <ul className="space-y-3">
+                      {job.highlights.map((point, i) => (
+                        <li key={i} className="flex gap-3 text-medium-contrast text-sm leading-relaxed">
+                          <span className="text-terminal-green shrink-0 mt-1">▹</span>
+                          <span>{point}</span>
+                        </li>
+                      ))}
+                    </ul>
+                    <div className="flex flex-wrap gap-2 mt-6 pt-5 border-t border-gray-800/50">
+                      {job.stack.map((tech, i) => (
+                        <span
+                          key={i}
+                          className="px-2 py-1 bg-gray-800/50 backdrop-blur-sm border border-gray-700/50 text-medium-contrast text-xs tracking-wide"
+                        >
+                          {tech}
+                        </span>
+                      ))}
+                    </div>
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
           </div>
 
           {/* CTA Section */}
