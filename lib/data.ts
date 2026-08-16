@@ -72,7 +72,7 @@ export const personalData = {
       title: "MockMate – Peer Interview Practice Platform",
       description:
         "A real-time peer-to-peer mock interview platform with smart matchmaking, WebRTC video calling and session management. Built the signaling layer on Supabase Realtime rather than a third-party video SDK.",
-      image: "/placeholder.svg?height=300&width=500",
+      image: "/mockmate.png",
       tags: ["React 18", "TypeScript", "Supabase", "WebRTC", "PostgreSQL", "Tailwind CSS"],
       liveUrl: "https://iammockmate.vercel.app/",
       githubUrl: "https://github.com/Saurabhshukla999/MockMate",
