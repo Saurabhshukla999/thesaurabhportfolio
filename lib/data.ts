@@ -10,7 +10,7 @@ export const personalData = {
 
   // Professional Summary
   summary:
-    "Backend Developer with 10 merged pull requests to a production Ruby on Rails API powering a live B2B salon analytics and booking platform. I ship feature modules, schema migrations and RSpec request specs through senior code review, and fix production defects on critical booking paths. Comfortable across the stack, with full-stack applications built in React, Node.js and Supabase.",
+    "Backend Developer with 10 merged pull requests to a production Ruby on Rails API powering a live B2B salon analytics and booking platform. I ship feature modules, schema migrations and RSpec specs through senior code review, structure code with Query and Service Objects, and fix production defects on critical booking paths. Comfortable across the stack, with full-stack applications built in React, Node.js and Supabase.",
 
   // Hero Section
   hero: {
@@ -23,11 +23,11 @@ export const personalData = {
   // Technical Skills
   skills: {
     languages: ["Ruby", "JavaScript", "TypeScript", "SQL", "Java", "C"],
-    frameworks: ["Ruby on Rails", "React.js", "Next.js", "Tailwind CSS", "Radix UI", "shadcn/ui"],
-    tools: ["Git", "Bitbucket", "GitHub", "Postman", "Swagger / OpenAPI", "Vercel"],
-    backend: ["Node.js", "Express.js", "REST API design", "Supabase Edge Functions", "Sidekiq", "WebRTC"],
+    frameworks: ["Ruby on Rails", "ActiveRecord", "React.js", "Next.js", "Tailwind CSS", "shadcn/ui"],
+    tools: ["Git", "Bitbucket", "GitHub", "Docker", "AWS", "Postman", "Vercel"],
+    backend: ["Node.js", "Express.js", "REST API design", "Sidekiq", "ActiveJob", "Supabase Edge Functions", "WebRTC"],
     databases: ["PostgreSQL", "MongoDB", "Redis", "Supabase"],
-    testing: ["RSpec", "Request & Controller Specs", "Postman"],
+    testing: ["RSpec", "Request, Service & Query Specs", "OpenAPI / Swagger (Rswag)"],
     authentication: ["JWT", "Row Level Security"],
   },
 
@@ -40,28 +40,41 @@ export const personalData = {
       location: "Gurugram, Haryana",
       context: "B2B salon analytics & booking platform",
       current: true,
-      stack: ["Ruby on Rails", "PostgreSQL", "RSpec", "Bitbucket", "Swagger"],
+      stack: ["Ruby on Rails", "PostgreSQL", "RSpec", "Sidekiq", "Docker", "Bitbucket"],
       highlights: [
         "Shipped 10 merged pull requests to the production api-service Rails codebase, spanning feature modules, schema migrations, request specs and production bug fixes — each iterated through senior code review.",
         "Built the Reschedule Booking API (PUT /appointments/:id/reschedule) as a dedicated endpoint to avoid regressions in the existing booking flow, encoding status-transition rules and 422 validation that blocks completed or cancelled appointments.",
-        "Delivered the Billing module and the product catalogue APIs, plus update and destroy actions for salon customer profiles.",
-        "Implemented the database schemas behind the Salon Setup and Customer CRM modules — salon settings, staff, products and customer family relationships.",
-        "Fixed production defects across the booking path: promo-code expiry validation, past-dated time-slot booking, and appointment update parameters for guest details.",
-        "Authored RSpec request specs covering the appointment booking flow and AppointmentsController, and documented endpoint schemas in the team's Swagger/OpenAPI spec.",
+        "Delivered the Billing module and product catalogue APIs, and engineered reporting and analytics modules covering sales, attendance, staff performance, taxation, inventory and profitability.",
+        "Implemented the database schemas behind the Salon Setup and Customer CRM modules, and improved performance by resolving N+1 query issues and tuning ActiveRecord queries.",
+        "Structured backend code with Query Objects, Service Objects and ActiveModel Serializers for maintainability, and scheduled asynchronous workflows with Sidekiq and ActiveJob.",
+        "Authored RSpec request, service and query specs, and documented every endpoint with OpenAPI (Swagger) via Rswag to improve frontend integration.",
       ],
     },
     {
       company: "Bluestock Fintech",
-      role: "Software Developer Intern",
-      period: "July 2025 – September 2025",
-      location: "Remote",
-      context: "IPO listing platform",
+      role: "Back End Developer, Intern",
+      period: "July 2025 – August 2025",
+      location: "Hybrid",
+      context: "IPO web application",
       current: false,
-      stack: ["React", "Express", "REST APIs"],
+      stack: ["React", "Express", "REST APIs", "MERN"],
       highlights: [
-        "Built a web-based IPO listing platform using React and Express with modular UI and REST APIs.",
-        "Integrated the frontend with backend APIs and optimized database queries, reducing API response time by ~30%.",
-        "Implemented reusable UI components and structured backend routing for scalability, and improved input validation and error handling across the application.",
+        "Played a key role in delivering a critical IPO web application, reporting directly to the project manager.",
+        "Developed scalable API endpoints and integrated them with responsive React interfaces, optimizing database queries to reduce API response time by ~30%.",
+        "Implemented reusable UI components and structured backend routing, and improved input validation and error handling across the application.",
+      ],
+    },
+    {
+      company: "Freelance",
+      role: "Web Developer",
+      period: "June 2024 – Present",
+      location: "Remote",
+      context: "Independent client projects",
+      current: true,
+      stack: ["React", "Node.js", "MongoDB", "Tailwind CSS"],
+      highlights: [
+        "Independently ran the full development lifecycle for multiple client projects — requirements gathering, interface design, implementation, testing and deployment.",
+        "Delivered every engagement to client sign-off, balancing scope and timelines directly with the client.",
       ],
     },
   ],
@@ -85,19 +98,19 @@ export const personalData = {
       ],
     },
     {
-      title: "SmartServe – Local Service Finder Platform",
+      title: "SmartServe – Local Service Marketplace",
       description:
-        "Developed an end-to-end platform that connects users with nearby verified service providers. Built fully responsive UI screens, secure authentication, location-based service discovery, and structured backend workflows.",
+        "Full-stack marketplace connecting people with reliable local service providers — electricians, plumbers and more — who can register, be discovered, and be rated after each job.",
       image: "/placeholder.svg?height=300&width=500",
       tags: ["React", "TypeScript", "Node.js", "Express", "PostgreSQL", "Tailwind CSS"],
       liveUrl: "https://smartserve-omega.vercel.app/",
       githubUrl: "https://github.com/Saurabhshukla999/SmartServe",
       featured: true,
       highlights: [
-        "Designed and developed the complete Full Stack application from UI to backend APIs.",
-        "Implemented secure user authentication, provider profiles, and service listings.",
-        "Created booking flow, provider dashboard, and role-based access logic.",
-        "Developed robust REST APIs with validation and optimized database queries.",
+        "Built the complete application end to end, from UI screens to backend REST APIs.",
+        "Implemented role-based dashboards for customers and service providers, with secure JWT authentication and provider profiles.",
+        "Created booking workflows, service management and a review system so users can rate providers after a service.",
+        "Added search, filtering and location-based provider discovery, and deployed to a live production environment.",
       ],
     },
     {
@@ -114,7 +127,6 @@ export const personalData = {
         "Implemented CRUD operations for tasks and notes with efficient API design.",
         "Built a custom Pomodoro timer with state management for productivity tracking.",
         "Created reusable and responsive UI components styled with Tailwind CSS.",
-        "Integrated MongoDB with structured schema design for reliable data storage.",
       ],
     },
     {
@@ -131,7 +143,6 @@ export const personalData = {
         "Implemented hashing logic and MongoDB indexing for fast lookups.",
         "Built a clean dashboard-style UI in React for creating and managing links.",
         "Added click analytics, device info logging, and error-handled redirects.",
-        "Deployed the backend for stable public use with structured routing.",
       ],
     },
   ],
@@ -141,12 +152,12 @@ export const personalData = {
     {
       degree: "BTech in Computer Science and Engineering",
       institute: "Dronacharya College of Engineering, Gurugram",
-      year: "2022-Present",
-      grade: "74.56%",
+      year: "2022-2026",
+      grade: "74.56% (2378/3200)",
     },
     {
       degree: "Class XII CBSE-AISSCE",
-      institute: "Dronacharya College of Engineering, Gurugram",
+      institute: "New Shishu Kalyan Sr Sec School, Gurugram",
       year: "2022",
       grade: "89.4%",
     },
@@ -161,7 +172,7 @@ export const personalData = {
   // Certifications
   certifications: [
     "freeCodeCamp — Back End Development and APIs",
-    "NPTEL — Cloud Computing",
+    "NPTEL — Cloud Computing (Elite)",
   ],
 
   // Social Links
