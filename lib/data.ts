@@ -88,7 +88,7 @@ export const personalData = {
       title: "SmartServe – Local Service Marketplace",
       description:
         "Full-stack marketplace connecting people with reliable local service providers — electricians, plumbers and more — who can register, be discovered, and be rated after each job.",
-      image: "/placeholder.svg?height=300&width=500",
+      image: "/smartserve.png",
       tags: ["React", "TypeScript", "Node.js", "Express", "PostgreSQL", "Tailwind CSS"],
       liveUrl: "https://smartserve-omega.vercel.app/",
       githubUrl: "https://github.com/Saurabhshukla999/SmartServe",
