@@ -64,19 +64,6 @@ export const personalData = {
         "Implemented reusable UI components and structured backend routing, and improved input validation and error handling across the application.",
       ],
     },
-    {
-      company: "Freelance",
-      role: "Web Developer",
-      period: "June 2024 – Present",
-      location: "Remote",
-      context: "Independent client projects",
-      current: true,
-      stack: ["React", "Node.js", "MongoDB", "Tailwind CSS"],
-      highlights: [
-        "Independently ran the full development lifecycle for multiple client projects — requirements gathering, interface design, implementation, testing and deployment.",
-        "Delivered every engagement to client sign-off, balancing scope and timelines directly with the client.",
-      ],
-    },
   ],
 
   // Projects
