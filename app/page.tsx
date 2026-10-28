@@ -188,7 +188,7 @@ export default function HomePage() {
                   {/* Profile image */}
                   <div className="w-80 h-80 lg:w-96 lg:h-96 bg-gray-900/80 backdrop-blur-sm relative overflow-hidden border border-gray-800/50">
                     <Image
-                      src="/images/saurabh.png"
+                      src="/images/saurabh.jpg"
                       alt={personalData.name}
                       width={400}
                       height={400}
